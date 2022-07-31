@@ -3,26 +3,8 @@ import React, { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
 import "./App.css";
-import MetaTags from 'react-meta-tags';
 
-class Component1 extends React.Component {
-  render() {
-    return (
-        <div class="wrapper">
-          <MetaTags>
-            
-            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
-            
-            
-          </MetaTags>
-          <div class="content"> Some Content </div>
-        </div>
-      )
-  }
-}
-
-
-const API_URL = "http://www.omdbapi.com?apikey=800cd267";
+const API_URL = "https://www.omdbapi.com?apikey=800cd267";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
